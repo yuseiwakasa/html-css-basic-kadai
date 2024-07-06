@@ -1,0 +1,41 @@
+html{font-size: 20px;
+    text-align: center;
+    }
+
+.Josefin-Sans {
+    /*ここにJosefin Sansを指定します */
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Arial","mairyo", sans-serif;
+}
+
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 1.2em;
+    text-shadow: 1px 1px 2px #191970;
+    border-bottom: 3px solid rgb(115,115,114);
+}
+h2 {
+    font-size: 1rem;
+}
+
+.text-skyblue {
+    color: skyblue;
+}
+
+.text-pink {
+    color: rgb(255,192,203)
+}
+
+#up p{
+    font-weight: bold;
+}
