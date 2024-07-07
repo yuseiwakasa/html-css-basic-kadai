@@ -1,41 +1,84 @@
-html{font-size: 20px;
-    text-align: center;
-    }
-
-.Josefin-Sans {
-    /*ここにJosefin Sansを指定します */
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+h1,p,body {
+    margin: 0;
 }
 
-body {
-    font-family: "Arial","mairyo", sans-serif;
+p,a {
+    font-size: 20px;
+}
+
+header {
+    margin: 0px 0px 20px 0px;
+    background-color: rgb(244,79,79);
+    text-align: center;
 }
 
 h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    letter-spacing: 1.2em;
-    text-shadow: 1px 1px 2px #191970;
-    border-bottom: 3px solid rgb(115,115,114);
+    color: rgb(255,255,255);
 }
+
+main {
+    padding: 10px;
+}
+
+#parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contents {
+    border: 3px solid rgb(238,204,204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
 h2 {
-    font-size: 1rem;
+    font-size: 25px;
+    border-bottom: 3px botted rgb(236,122,122);
 }
 
-.text-skyblue {
-    color: skyblue;
+h2::before {
+    content: "●";
+    columns: rgb(239,111,139);
 }
 
-.text-pink {
-    color: rgb(255,192,203)
-}
-
-#up p{
+.contents p:nth-of-type(2)::first-letter {
     font-weight: bold;
+    color: rgb(97,206,249)
+}
+
+.contents img {
+    margin: 10px 0px;
+    width: 70%;
+}
+
+footer {
+    background-color: rgb(244,79,79);
+    text-align: center;
+}
+
+a {
+    color: rgb(255,255,255);
+}
+
+a:visited {
+    color: rgb(193,234,251)
+}
+
+a:hover {
+    color: rgb(245,178,168);
+}
+
+@media screen and (max-width:768px) {
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+    #parent {
+        flex-direction: column;
+    }
 }
